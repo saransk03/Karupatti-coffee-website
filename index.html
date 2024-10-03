@@ -1,123 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./Assests/logo.png" type="image/x-icon" />
     <title>Karupatti Coffee Landpage | Saran kumar</title>
     <!--Tailwind cdn-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Css file-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!--Font file-->
-    <link rel="stylesheet" href="./font/style.css">
+    <link rel="stylesheet" href="./font/style.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body class="bg-[#EEA000]">
-<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#EEA000]">
+    <!--
 Common style
 color: #530400 ;
  font: LT Funk ;
 -->
 
-        <nav class="w-[90%]  z-10 mx-auto grid grid-cols-2 mt-4 border-b-[3px] py-1 border-[#530400]">
-            <div class="flex flex-row justify-start items-center gap-2">
-                <img src="./Assests/logo.png" alt="logo-img" class="w-24">
-                <h1 class="text-[25px] w-2 leading-6 text-[#530400] mb-0">Nellai Karupatti Coffee</h1>
-            </div>
-            <div class="flex flex-col justify-end">
-                <ul class="flex flex-row justify-end items-end gap-[100px] px-[10px]">
-                    <li class="text-[20px] text-[#530400] nav-items flex flex-col justify-center items-center" >
-                        <i class="fa-solid fa-cart-shopping text-[30px] w-[20px] mb-1 icons"></i>
-                        <a href="" >PRODUCT</a>
-                    </li>
-                    <li class="text-[20px] text-[#530400] nav-items">
-                        <i class="fa-solid fa-user text-[30px] w-[20px] mb-1 icons"></i>
-                        <a href=" ">ABOUT  </a>
-                    </li>
-                    <li class="text-[20px] text-[#530400] nav-items">
-                        <i class="fa-solid fa-phone text-[30px] w-[20px] mb-1 icons"></i>
-                        <a href="">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <nav
+      class="w-[90%] z-10 mx-auto grid grid-cols-1 md:grid-cols-2 mt-4 border-b-[3px] py-1 border-[#530400]"
+    >
+      <div
+        class="flex flex-row justify-center md:justify-start items-center gap-2"
+      >
+        <img src="./Assests/logo.png" alt="logo-img" class="w-24" />
+        <h1 class="text-[25px] w-[100%] md:w-2 leading-6 text-[#530400] mb-0">
+          Nellai Karupatti Coffee
+        </h1>
+      </div>
+      <div class="flex flex-col justify-end">
+        <ul class="flex flex-row justify-end items-end gap-[100px] px-[10px]">
+          <li
+            class="text-[20px] text-[#530400] nav-items flex flex-col justify-center items-center"
+          >
+            <i
+              class="fa-solid fa-cart-shopping text-[30px] w-[20px] mb-1 icons"
+            ></i>
+            <a href="#product">PRODUCT</a>
+          </li>
+          <li class="text-[20px] text-[#530400] nav-items">
+            <i class="fa-solid fa-user text-[30px] w-[20px] mb-1 icons"></i>
+            <a href="#About">ABOUT </a>
+          </li>
+          <li class="text-[20px] text-[#530400] nav-items">
+            <i class="fa-solid fa-phone text-[30px] w-[20px] mb-1 icons"></i>
+            <a href="contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <section id="home">
-        <div class="2xl:container mx-auto">
-            <div class="w-[90%] grid grid-cols-2 mx-auto py-[10px]">
-              <div class="flex flex-col justify-center items-center">
-                    <h3 class="text-[40px] text-[#9c211a] mt-[50px]">The taste of tradition </h3>
-                    <h1 class="text-[60px] text-[#530400] mt-[-30px]">Nellai Karupatti Coffee</h1>
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <p class="text-[30px] bg-[#530400] py-1 px-3 rounded-r-[50px] rounded-tl-[50px] text-[#f6cb1f] mt-[50px]">100+</p>
-                <p class="text-[40px] text-[#530400] mt-[-10px]">Successful Outlets</p>
-              </div>
-            </div>
-            <div class="w-[90%] grid grid-cols-2 mx-auto py-[20px]">
-                <div class="flex flex-col justify-center items-center py-[20px] gap-6">
-                    <p id="para" class="text-[#530400] text-start text-[20px] w-[600px]">Karupatti Coffee is a traditional South Indian beverage sweetened with karupatti, or palm jaggery, instead of refined sugar. Known for its rich, caramel-like flavor, karupatti is made from the sap of palm trees and is packed with essential minerals like iron and calcium. The coffee is brewed as a strong decoction, with the karupatti melted and mixed in to enhance the flavor. Often enjoyed with or without milk, it offers a healthier alternative to sugary drinks due to its lower glycemic index, making it a great option for managing blood sugar levels. Karupatti also boosts digestion and provides sustained energy without the crash associated with refined sugar. Particularly popular in Tamil Nadu, Karupatti Coffee has gained renewed appreciation as people seek more natural and nutritious alternatives. Its unique balance of bold coffee and subtle sweetness makes it both a delicious and wholesome choice for coffee lovers.</p>
-                        <div>
-                        <a href="https://nellaikarupatticoffee.com/" target="_blank">
-                            <button id="btn" class="bg-[#530400] py-2 px-5 rounded-[50px] text-[15px] text-[#eece00]">
-                                LEARN MORE
-                            </button>
-                        </a>
-                       </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <img src="./Assests/Coffee png.png" alt="" class="w-[450px] shake-br">
-                </div>
-            </div>
+      <div class="2xl:container mx-auto pb-14 relative">
+        <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 mx-auto py-[10px]">
+          <div class="flex flex-col justify-center items-center">
+            <h3 class="text-[30px] md:text-[40px] text-[#9c211a] mt-[50px]">
+              The taste of tradition
+            </h3>
+            <h1
+              class="text-[40px] md:text-[60px] text-[#530400] mt-[-20px] md:mt-[-30px]"
+            >
+              Nellai Karupatti Coffee
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <p
+              class="text-[30px] bg-[#530400] py-1 px-3 rounded-r-[50px] rounded-tl-[50px] text-[#f6cb1f] mt-[50px]"
+            >
+              100+
+            </p>
+            <p class="text-[40px] text-[#530400] mt-[-10px]">
+              Successful Outlets
+            </p>
+          </div>
         </div>
+        <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 mx-auto py-[20px]">
+          <div
+            class="flex flex-col justify-center items-center py-[20px] gap-6"
+          >
+            <p
+              id="para"
+              class="text-[#530400] text-start text-[15px] md:text-[20px] w-[400px] md:w-[600px]"
+            >
+              Karupatti Coffee is a traditional South Indian beverage sweetened
+              with karupatti, or palm jaggery, instead of refined sugar. Known
+              for its rich, caramel-like flavor, karupatti is made from the sap
+              of palm trees and is packed with essential minerals like iron and
+              calcium. The coffee is brewed as a strong decoction, with the
+              karupatti melted and mixed in to enhance the flavor. Often enjoyed
+              with or without milk, it offers a healthier alternative to sugary
+              drinks due to its lower glycemic index, making it a great option
+              for managing blood sugar levels. Karupatti also boosts digestion
+              and provides sustained energy without the crash associated with
+              refined sugar. Particularly popular in Tamil Nadu, Karupatti
+              Coffee has gained renewed appreciation as people seek more natural
+              and nutritious alternatives. Its unique balance of bold coffee and
+              subtle sweetness makes it both a delicious and wholesome choice
+              for coffee lovers.
+            </p>
+            <div>
+              <a href="https://nellaikarupatticoffee.com/" target="_blank">
+                <button
+                  id="btn"
+                  class="bg-[#530400] py-2 px-5 rounded-[50px] text-[15px] text-[#eece00]"
+                >
+                  LEARN MORE
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <img
+              src="./Assests/Coffee png.png"
+              alt=""
+              class="w-[450px] shake-br"
+            />
+          </div>
+        </div>
+        <div class="absolute right-3 top-[30%] space-y-5">
+          <a
+            href="https://www.instagram.com/nellaikarupatticoffeeofficial/?next=%2F"
+            target="_blank"
+          >
+            <div
+              class="flex justify-center items-center bg-[#530400] w-[50px] h-[50px] rounded-[50px] my-4 social"
+            >
+              <i class="fa-brands fa-instagram text-[24px] text-[#eece00]"></i>
+            </div>
+          </a>
+          <a
+            href="https://www.facebook.com/nellaikarupatticoffee?mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <div
+              class="flex justify-center items-center bg-[#530400] w-[50px] h-[50px] rounded-[50px] my-4 social"
+            >
+              <i class="fa-brands fa-facebook-f text-[22px] text-[#eece00]"></i>
+            </div>
+          </a>
+          <a href="https://nellaikarupatticoffee.com/" target="_blank">
+            <div
+              class="flex justify-center items-center bg-[#530400] w-[50px] h-[50px] rounded-[50px] my-4 social"
+            >
+              <i class="fa-solid fa-globe text-[22px] text-[#eece00]"></i>
+            </div>
+          </a>
+          <a href="https://x.com/nkcofficialpage" target="_blank">
+            <div
+              class="flex justify-center items-center bg-[#530400] w-[50px] h-[50px] rounded-[50px] social"
+            >
+              <i class="fa-brands fa-twitter text-[22px] text-[#eece00]"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="marquee bg-[#530400]">
+          <div class="marquee-content flex gap-4">
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+            <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="product">
-        <div class="2xl:container mx-auto py-4 bg-[#530400]">
-            <div class="w-[8clear0%] mx-auto grid grid-cols-1">
-                <div class="flex justify-center py-8">
-                    <h1 class="text-[45px] text-[#EEA000]">Our Products</h1>
-                </div>
+      <div class="2xl:container mx-auto py-14 bg-[#530400]">
+        <div class="w-[80%] mx-auto grid grid-cols-1">
+          <div class="flex justify-center py-8">
+            <h1 class="text-[45px] text-[#EEA000]">Our Products</h1>
+          </div>
+        </div>
+
+        <div class="w-[80%] mx-auto grid grid-cols-1 gap-10">
+          <div
+            class="flex flex-row justify-center items-center flex-wrap gap-6"
+          >
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/coffee.jpg')] bg-bottom border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[22%]"
+                >
+                  Karupatti Coffee
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Coffee is a traditional South Indian drink sweetened
+                  with palm jaggery, offering a rich, caramel-like flavor. It is
+                  a healthier alternative to sugar-sweetened coffee, providing
+                  essential minerals and a lower glycemic index.
+                </p>
+              </div>
             </div>
 
-            <div class="w-[80%] mx-auto grid grid-cols-3 gap-10">
-                <div class="border-[#EEA000] bg-[url('./Assests/coffee.jpg')] bg-bottom border-[3px] bg-cover rounded-r-[30px] w-[300px] h-[380px] flex flex-grow rounded-tl-[30px] relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Karupatti Coffee</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Coffee is a traditional South Indian drink sweetened with palm jaggery, offering a rich, caramel-like flavor. It is a healthier alternative to sugar-sweetened coffee, providing essential minerals and a lower glycemic index.</p>
-                </div>
-   
-                <div class="border-[#EEA000] bg-[url('./Assests/halwa.jpg')]  border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Karupatti Halwa</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Halwa is a traditional South Indian dessert made with palm jaggery (karupatti), which gives it a rich, caramel-like sweetness and a deep flavor. This halwa is known for being both delicious and healthier, as karupatti is packed with minerals like iron and calcium.</p>
-                </div>
-                <div class="border-[#EEA000] bg-[url('./Assests/laddu.jpg')] bg-bottom border-[3px] bg-cover rounded-l-[30px] w-[300px] h-[380px] flex flex-grow rounded-tr-[30px] relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Mothi Laddu</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Mothi Laddu is a nutritious South Indian sweet made with palm jaggery (karupatti) and gram flour, offering a rich, caramel-like flavor. It's a healthier alternative to traditional laddus, providing essential minerals like iron and calcium.</p>
-                </div>
-   
-                <div class="border-[#EEA000] bg-[url('./Assests/muruku.jpg')] bg-bottom border-[3px] bg-cover rounded-r-[30px] w-[300px] h-[380px] flex flex-grow rounded-bl-[30px] relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Spicy Muruku</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Spicy Murukku is a crunchy South Indian snack made with rice flour and flavored with palm jaggery (karupatti), adding a unique blend of sweet and spicy flavors. The combination of karupatti with spices makes it both a tasty and healthier snack option.</p>
-                </div>
-   
-                <div class="border-[#EEA000] bg-[url('./Assests/poli.jpg')] bg-bottom border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow  relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Sweet Poli</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Poli is a traditional South Indian flatbread stuffed with a sweet filling made from palm jaggery (karupatti) and coconut. It combines the rich flavor of jaggery with soft, flaky bread for a delicious and wholesome treat.</p>
-                </div>
-   
-               
-   
-                <div class="border-[#EEA000] bg-[url('./Assests/jamun.jpg')]  border-[3px] bg-cover rounded-l-[30px] w-[300px] h-[380px] flex flex-grow rounded-br-[30px] relative">
-                    <h2 class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[26%] hidden">Gulab Jamun</h2>
-                    <p class="text-justify px-3  text-[15px] text-[white] absolute bottom-4 hidden">Karupatti Gulab Jamun is a twist on the classic Indian dessert, using palm jaggery (karupatti) syrup instead of sugar syrup for a richer, caramel-like flavor. This variation offers a healthier and more nutrient-rich option, with the same soft, indulgent texture of traditional gulab jamun.</p>
-                </div>
-   
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/halwa.jpg')] border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[24%]"
+                >
+                  Karupatti Halwa
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Halwa is a traditional South Indian dessert made
+                  with palm jaggery (karupatti), which gives it a rich,
+                  caramel-like sweetness and a deep flavor. This halwa is known
+                  for being both delicious and healthier, as karupatti is packed
+                  with minerals like iron and calcium.
+                </p>
+              </div>
             </div>
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/laddu.jpg')] bg-bottom border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[21%]"
+                >
+                  Mothi Laddu
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Mothi Laddu is a nutritious South Indian sweet made
+                  with palm jaggery (karupatti) and gram flour, offering a rich,
+                  caramel-like flavor. It's a healthier alternative to
+                  traditional laddus, providing essential minerals like iron and
+                  calcium.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/muruku.jpg')] bg-bottom border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[22%]"
+                >
+                  Spicy Muruku
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Spicy Murukku is a crunchy South Indian snack made
+                  with rice flour and flavored with palm jaggery (karupatti),
+                  adding a unique blend of sweet and spicy flavors. The
+                  combination of karupatti with spices makes it both a tasty and
+                  healthier snack option.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/poli.jpg')] bg-bottom border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[21%]"
+                >
+                  Sweet Poli
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Poli is a traditional South Indian flatbread stuffed
+                  with a sweet filling made from palm jaggery (karupatti) and
+                  coconut. It combines the rich flavor of jaggery with soft,
+                  flaky bread for a delicious and wholesome treat.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card border-[#EEA000] bg-[url('./Assests/jamun.jpg')] bg-center border-[3px] bg-cover rounded-[30px] w-[300px] h-[380px] flex flex-grow relative"
+            >
+              <div class="gradient"></div>
+              <div class="pname">
+                <h2
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[25%]"
+                >
+                  Gulab Jamun
+                </h2>
+                <p
+                  class="text-justify px-3 text-[10px] text-[white] absolute bottom-8"
+                >
+                  Karupatti Gulab Jamun is a twist on the classic Indian
+                  dessert, using palm jaggery (karupatti) syrup instead of sugar
+                  syrup for a richer, caramel-like flavor. This variation offers
+                  a healthier and more nutrient-rich option, with the same soft,
+                  indulgent texture of traditional gulab jamun.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center py-[10px]">
+            <a
+              href="https://nellaikarupatticoffee.com/products"
+              target="_blank"
+            >
+              <button
+                id="btn"
+                class="bg-[#eece00] py-2 px-5 rounded-[50px] text-[25px] text-[#530400]"
+              >
+                More Products
+              </button>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="About">
+      <div class="2xl:container mx-auto py-14">
+        <div class="w-[80%] mx-auto grid grid-cols-1">
+          <h1 class="text-[45px] text-center text-[#530400]">About us</h1>
+        </div>
+        <div class="w-[90%] mx-auto grid grid-cols-2 py-5 mt-2">
+          <div class="flex flex-col justify-center items-center gap-4">
+            <p class="text-start px-3 text-[25px] text-[#530400]">
+              NELLAI KARUPATTI COFFEEis an authentic coffee outlet. We are known
+              for our signature Karupatti coffee and other Karupatti infused
+              snacks, which are both traditional and tasty.
+            </p>
+            <br>
+            <br>
+            <p class="text-center border-[4px] rounded-[30px]  py-4 px-8 border-[#530400] px-3 text-[25px] text-[#530400]">
+              To ‘Serve Healthy’ is our priority and ‘Your Satisfaction’ is our
+              aim.
+            </p>
+            <br><br>
+            <p class="text-start px-3 text-[25px] text-[#530400]">
+              Our vision is to serve healthy organic food and reintroduce the
+              traditional food system. With the dawn of the modern era, we are
+              committed to bring back authentic foods infused with innovation.
+            </p>
+          </div>
+          <div class="flex justify-center items-center relative">
+            <div class="bg-[#530400] w-[500px] h-[500px] rounded-[500px] right-[80px] bottom-[-20px] absolute shadow-2xl shadow-[#530400] z-0"></div>
+            <img src="./Assests/history.png" alt="img" class="w-[500px] h-[500px] rounded-[500px] z-10">
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
