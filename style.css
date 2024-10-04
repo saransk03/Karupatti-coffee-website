@@ -104,27 +104,89 @@
 .social:hover i{
         color: #530400;
 }
+.about-img{
+        filter: drop-shadow(0px 0px 20px rgba(130, 0, 0, 0.9));
+}
+.input{
+        border-bottom: 2px solid #530400;
+        border-radius: 20px;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+}
+label{
+        position: relative;
+        right: 110px;
+}
+#message{
+        border-bottom: 2px solid #530400;
+        border-radius: 20px;
+        padding: 10px;
+        width: 300px;
+        margin: 10px;
+        transition: all 0.3s ease;
+}
+#contact{
+        background-image: url(./Assests/contact-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+}
+.contact-social{
+        width: 500px;
+        border-radius: 30px;
+        border-right: 4px solid #e7cf00;
+        border-bottom: 4px solid #e7cf00;
+        height: 300px;
+        background-color: #530400;
+        position: absolute;
+        right: 200px;
+        top: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#contact-nav:hover{
+        background-color: #ffe600;
+        color: #530400;
+        border: 2px solid #530400;
+        transition: all 0.3s ease;
+        
+}
 .marquee {
         width: 100%; /* Full width */
+        height: 30px;
         overflow: hidden; /* Hide overflow */
         position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scroll-right 20s linear infinite; /* 10s scrolling loop */
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(100%); /* Start from the right */
     }
-    
-    .marquee-content {
-        display: flex;
-        animation: scroll-right 20s linear infinite; /* 10s scrolling loop */
+    to {
+        transform: translateX(-100%); /* Scroll to the left */
     }
-    
-    @keyframes scroll-right {
-        from {
-            transform: translateX(100%); /* Start from the right */
-        }
-        to {
-            transform: translateX(-100%); /* Scroll to the left */
-        }
-    }
-    
+}
+  
+footer{
+        margin: 0;
+        padding: 0;
+}
 
 /**animation */ 
 .shake-br {
