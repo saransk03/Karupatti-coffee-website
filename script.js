@@ -4,6 +4,43 @@ const navItems = document.querySelectorAll(".nav-items");
 const gradientItems = document.querySelectorAll(".gradient");
 const cardItems = document.querySelectorAll(".card")
 
+const menuElement = document.getElementById("burger");
+const crossElement = document.getElementById("cross")
+const navElement = document.getElementById("nav-mob");
+
+const upBtn = document.getElementById("upbtn");
+
+upBtn.addEventListener("click",() =>{
+    window.scrollTo(top = 0, behaviour = 'smooth')
+})
+
+window.addEventListener("scroll",() =>{
+    if(window.pageYOffset > 200){
+        upBtn.classList.remove("hidden");
+    }else{
+        upBtn.classList.add("hidden");
+    }
+})
+
+
+menuElement.addEventListener("click",() =>{
+    menuElement.classList.add("hidden");
+    crossElement.classList.remove("hidden");
+    navElement.classList.remove("hidden");
+})
+
+crossElement.addEventListener("click",() =>{
+    menuElement.classList.remove("hidden");
+    crossElement.classList.add("hidden");
+    navElement.classList.add("hidden");
+})
+navElement.addEventListener("click",() =>{
+    menuElement.classList.remove("hidden");
+    crossElement.classList.add("hidden");
+    navElement.classList.add("hidden");
+})
+
+
 
 
 navItems.forEach(items =>{

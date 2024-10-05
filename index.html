@@ -38,14 +38,38 @@ color: #530400 ;
       class="w-[90%] z-10 mx-auto grid grid-cols-1 md:grid-cols-2 mt-4 border-b-[3px] py-1 border-[#530400]"
     >
       <div
-        class="flex flex-row justify-center md:justify-start items-center gap-2"
+        class="flex flex-row justify-between md:justify-start items-center gap-2"
       >
-        <img src="./Assests/logo.png" alt="logo-img" class="w-24" />
-        <h1 class="text-[25px] w-[100%] md:w-2 leading-6 text-[#530400] mb-0">
-          Nellai Karupatti Coffee
-        </h1>
+        <div class="flex items-center gap-2">
+          <img src="./Assests/logo.png" alt="logo-img" class="md:w-24 w-[70px]" />
+          <h1 class="md:text-[25px] text-[18px] w-[30px] leading-4 md:w-2 md:leading-6 text-[#530400] mb-0">
+            Nellai Karupatti Coffee
+          </h1>
+        </div>
+        <div class="md:hidden ">
+          <div class="border-[3px] border-[#530400] rounded-[10px] px-3 py-[2px]">
+            <i id="burger" class="fa-solid fa-bars text-[30px] text-[#530400] "></i>
+            <i id="cross" class="fa-solid fa-xmark text-[30px] text-[#530400] hidden"></i>
+            
+          </div> 
+        </div>
       </div>
-      <div class="flex flex-col justify-end">
+      <!--nav in mob-->
+      <div id="nav-mob" class=" flex-col justify-center items-center flex hidden mt-2 md:hidden">
+        <ul class="flex flex-col justify-center items-center">
+          <li class="text-[20px] text-[#530400] py-1 ">
+            <a href="#product">PRODUCT</a>
+          </li>
+          <li class="text-[20px] text-[#530400] py-1">
+            <a href="#About">ABOUT </a>
+          </li>
+          <li class="text-[20px] text-[#530400] py-1">
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <!--nav in md-->
+      <div class=" flex-col justify-end hidden md:flex">
         <ul class="flex flex-row justify-end items-end gap-[100px] px-[10px]">
           <li
             class="text-[20px] text-[#530400] nav-items flex flex-col justify-center items-center"
@@ -69,13 +93,13 @@ color: #530400 ;
 
     <section id="home">
       <div class="2xl:container mx-auto pb-14 relative">
-        <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 mx-auto py-[10px]">
+        <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 mx-auto py-[5px]">
           <div class="flex flex-col justify-center items-center">
-            <h3 class="text-[30px] md:text-[40px] text-[#9c211a] mt-[50px]" data-aos="zoom-in-up" data-aos-duration="1000">
+            <h3 class="text-[20px] md:text-[40px] text-[#9c211a] mt-[50px]" data-aos="zoom-in-up" data-aos-duration="1000">
               The taste of tradition
             </h3>
             <h1
-              class="text-[40px] md:text-[60px] text-[#530400] mt-[-20px] md:mt-[-30px]"
+              class="text-[30px] text-center md:text-[60px] text-[#530400] mt-[-18px] md:mt-[-30px]"
               data-aos="zoom-in-up" data-aos-duration="1000">
               Nellai Karupatti Coffee
             </h1>
@@ -93,11 +117,11 @@ color: #530400 ;
         </div>
         <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 mx-auto py-[20px]">
           <div
-            class="flex flex-col justify-center items-center py-[20px] gap-6"
+            class="flex flex-col justify-center items-center py-[20px] gap-6 order-2 md:order-1"
           >
             <p
               id="para"
-              class="text-[#530400] text-start text-[15px] md:text-[20px] w-[400px] md:w-[600px]"
+              class="text-[#530400] text-start text-[15px] md:text-[20px] w-[350px] md:w-[600px]"
               data-aos="zoom-in-up" data-aos-duration="1000">
               Karupatti Coffee is a traditional South Indian beverage sweetened
               with karupatti, or palm jaggery, instead of refined sugar. Known
@@ -126,15 +150,15 @@ color: #530400 ;
               </a>
             </div>
           </div>
-          <div class="flex justify-center items-center"  data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="flex justify-center items-center order-1 md:order-2"  data-aos="zoom-in-up" data-aos-duration="1000">
             <img
               src="./Assests/Coffee png.png"
               alt=""
-              class="w-[450px]"
+              class="md:w-[450px] w-[300px] "
              />
           </div>
         </div>
-        <div class="absolute right-3 top-[30%] space-y-5">
+        <div class="absolute right-3 top-[30%] space-y-5 hidden md:block">
           <a
             href="https://www.instagram.com/nellaikarupatticoffeeofficial/?next=%2F"
             target="_blank"
@@ -171,7 +195,7 @@ color: #530400 ;
           </a>
         </div>
 
-        <div class="marquee bg-[#530400]">
+        <div class="marquee bg-[#530400] hidden md:block">
           <div class="marquee-content flex gap-4">
             <p class="text-[20px] text-[#eece00]">Nellai Karupatti Coffee</p>
             <br /><br /><br />
@@ -192,11 +216,18 @@ color: #530400 ;
       </div>
     </section>
 
+    <!--Upbutton-->
+    <div class="fixed right-2 bottom-[45px] z-10 hidden" id="upbtn"  data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="flex justify-center items-center w-[30px] h-[30px] rounded-[30px] md:w-[50px] md:h-[50px] md:rounded-[50px] border-[2px] border-white p-2">
+        <i class="fa-solid fa-arrow-up text-[20px] md:text-[30px] text-white"></i>
+      </div>
+    </div>
+
     <section id="product">
       <div class="2xl:container mx-auto py-10 bg-[#530400] pb-[80px]">
         <div class="w-[80%] mx-auto grid grid-cols-1">
           <div class="flex justify-center py-8">
-            <h1 class="text-[45px] text-[#EEA000]">Our Products</h1>
+            <h1 class="md:text-[45px] text-[30px] text-[#EEA000]">Our Products</h1>
           </div>
         </div>
 
@@ -252,7 +283,7 @@ color: #530400 ;
               <div class="gradient"></div>
               <div class="pname">
                 <h2
-                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[21%]"
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[23%]"
                 >
                   Mothi Laddu
                 </h2>
@@ -274,7 +305,7 @@ color: #530400 ;
               <div class="gradient"></div>
               <div class="pname">
                 <h2
-                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[22%]"
+                  class="text-start px-3 text-[25px] text-[#EEA000] absolute bottom-[24%]"
                 >
                   Spicy Muruku
                 </h2>
@@ -341,7 +372,7 @@ color: #530400 ;
               data-aos="zoom-in-up" data-aos-duration="1000">
               <button
                 id="btn"
-                class="bg-[#eece00] py-2 px-5 rounded-[50px] text-[25px] text-[#530400]"
+                class="bg-[#eece00] py-2 px-5 rounded-[50px] md:text-[25px] text-[#530400]"
               >
                 More Products
               </button>
@@ -353,44 +384,44 @@ color: #530400 ;
 
     <section id="About">
       <div class="2xl:container mx-auto py-[70px] mb-[50px] h-fit">
-        <div class="w-[80%] mx-auto grid grid-cols-1">
+        <div class="w-[80%] mx-auto grid grid-cols-1 ">
           <h1 class="text-[45px] text-center text-[#530400]" data-aos="zoom-in-up" data-aos-duration="1000">About us</h1>
         </div>
-        <div class="w-[90%] mx-auto grid grid-cols-2 py-5 mt-2">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 py-5 mt-2 gap-10">
           <div class="flex flex-col justify-center items-center gap-4">
-            <p class="text-start px-3 text-[25px] text-[#530400]" data-aos="zoom-in-up" data-aos-duration="1000">
+            <p class="text-start px-3 md:text-[25px] text-[#530400]" data-aos="zoom-in-up" data-aos-duration="1000">
               NELLAI KARUPATTI COFFEEis an authentic coffee outlet. We are known
               for our signature Karupatti coffee and other Karupatti infused
               snacks, which are both traditional and tasty.
             </p>
             <br>
             <br>
-            <p data-aos="zoom-in-up" data-aos-duration="1000" class="text-center border-[4px] rounded-[30px]  py-4 px-8 border-[#530400] px-3 text-[25px] text-[#530400]">
+            <p data-aos="zoom-in-up" data-aos-duration="1000" class="text-center border-[2px] md:border-[4px] rounded-[30px]  py-4  border-[#530400] px-3 md:px-8 md:text-[25px] text-[#530400]">
               To ‘Serve Healthy’ is our priority and ‘Your Satisfaction’ is our
               aim.
             </p>
             <br><br>
-            <p data-aos="zoom-in-up" data-aos-duration="1000" class="text-start px-3 text-[25px] text-[#530400]">
+            <p data-aos="zoom-in-up" data-aos-duration="1000" class="text-start px-3 md:text-[25px] text-[#530400]">
               Our vision is to serve healthy organic food and reintroduce the
               traditional food system. With the dawn of the modern era, we are
               committed to bring back authentic foods infused with innovation.
             </p>
           </div>
-          <div class="flex justify-center items-center relative" data-aos="zoom-in-up" data-aos-duration="1000">
-            <div class="about-img bg-[#530400] w-[500px] h-[500px] rounded-[500px] right-[80px] bottom-[-20px] absolute shadow-2xl shadow-[#530400] z-0"></div>
-            <img src="./Assests/history.png" alt="img" class="about-img w-[500px] h-[500px] rounded-[500px] z-10">
+          <div class="flex justify-center items-center relative " data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="about-img bg-[#530400]  w-[300px] h-[300px] rounded-[300px] md:w-[500px]  md:h-[500px] md:rounded-[500px] md:right-[80px] md:bottom-[-20px] right-[40px] bottom-[-10px] absolute md:shadow-2xl shadow-[#530400] z-0"></div>
+            <img src="./Assests/history.png" alt="img" class="about-img w-[300px] h-[300px] rounded-[300px] md:w-[500px] md:h-[500px] md:rounded-[500px] z-10">
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="2xl:container mx-auto py-[px]">
-        <div class="w-[90%] grid grid-cols-1  mx-auto">
+      <div class="2xl:container mx-auto py-[10px]">
+        <div class="w-[90%] grid grid-cols-1 mx-auto">
                 <div class="">
-                  <div class="bg-[#EEA000] mx-auto w-[50%] rounded-[30px] px-5 py-[30px]" data-aos="zoom-in-up" data-aos-duration="1000">
-                    <h1 class="text-[45px] text-center text-[#530400]" data-aos="zoom-in-up" data-aos-duration="1000">Contact</h1>
-                    <form class="w-[50%] flex flex-col justify-center items-center py-[30px] px-[20px]" data-aos="zoom-in-up" data-aos-duration="1000">
+                  <div class="bg-[#EEA000] mx-auto md:w-[50%] rounded-[30px] md:px-5 px-8 py-[30px]" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <h1 class="md:text-[45px] text-[30px] text-center text-[#530400]" data-aos="zoom-in-up" data-aos-duration="1000">Contact</h1>
+                    <form class="md:w-[50%] flex flex-col justify-center items-center md:py-[30px] md:px-[20px]" data-aos="zoom-in-up" data-aos-duration="1000">
                       <label class="text-[#530400] " for="name">Name :</label>
                       <input type="text" id="name" placeholder="Enter your name" class="input" required>
                       <label class="text-[#530400]" for="email">Email id :</label>
@@ -399,12 +430,48 @@ color: #530400 ;
                       <textarea id="message" placeholder="Enter your message"></textarea>
                      <div class="flex justify-center items-center mt-3">
                         <button id="btn" type="submit"  class="bg-[#530400] w-[200px] py-2 px-5 rounded-[50px] text-[14px] text-[#EAA000]">Submit</button>
-                      
                      </div>
                     </form>
+
+                    <div class=" flex justify-center items-center mt-6 gap-4 md:hidden">
+                      <a
+                        href="https://www.instagram.com/nellaikarupatticoffeeofficial/?next=%2F"
+                        target="_blank"
+                        >
+                        <div
+                          class="flex justify-center items-center bg-[#530400] w-[40px] h-[40px] rounded-[40px]  social"
+                          data-aos="zoom-in-up" data-aos-duration="1000">
+                          <i class="fa-brands fa-instagram text-[22px] text-[#eece00]"></i>
+                        </div>
+                      </a>
+                      <a
+                        href="https://www.facebook.com/nellaikarupatticoffee?mibextid=ZbWKwL"
+                        target="_blank"
+                        >
+                        <div
+                          class="flex justify-center items-center bg-[#530400] w-[40px] h-[40px] rounded-[40px] social"
+                          data-aos="zoom-in-up" data-aos-duration="1000">
+                          <i class="fa-brands fa-facebook-f text-[20px] text-[#eece00]"></i>
+                        </div>
+                      </a>
+                      <a href="https://nellaikarupatticoffee.com/" target="_blank">
+                        <div
+                          class="flex justify-center items-center bg-[#530400]  w-[40px] h-[40px] rounded-[40px]  social"
+                          data-aos="zoom-in-up" data-aos-duration="1000">
+                          <i class="fa-solid fa-globe text-[20px] text-[#eece00]"></i>
+                        </div>
+                      </a>
+                      <a href="https://x.com/nkcofficialpage" target="_blank">
+                        <div
+                          class="flex justify-center items-center bg-[#530400] w-[40px] h-[40px] rounded-[40px]  social"
+                        data-aos="zoom-in-up" data-aos-duration="1000">
+                          <i class="fa-brands fa-twitter text-[20px] text-[#eece00]"></i>
+                        </div>
+                      </a>
+                    </div>
                   </div>
   
-                  <div class="contact-social" data-aos="zoom-in-up" data-aos-duration="1000">
+                  <div class="contact-social hidden md:flex" data-aos="zoom-in-up" data-aos-duration="1000">
                     <div class="flex flex-col w-[50%] px-8 py-10 gap-5">
                        <a data-aos="zoom-in-up" data-aos-duration="1000" id="contact-nav" href="#home" class="px-7 py-1 text-center w-[150px] rounded-[10px] text-[#EEA000] border-[#EEA000] border-[2px]">Home</a>
                        <a data-aos="zoom-in-up" data-aos-duration="1000" id="contact-nav" href="#About" class="px-7 py-1 text-center w-[150px] rounded-[10px] text-[#EEA000] border-[#EEA000] border-[2px]">About</a>
@@ -435,12 +502,15 @@ color: #530400 ;
         </div>
       </div>
     </section>
+
     <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
   </body>
+
   <footer>
     <div class="2xl:container mx-auto bg-[#530400] py-2">
       <div class="flex justify-center items-center">
@@ -448,4 +518,5 @@ color: #530400 ;
       </div>
     </div>
   </footer>
+
 </html>

@@ -136,6 +136,7 @@ label{
         background-size: cover;
         box-sizing: border-box;
         min-height: 100vh;
+        z-index: 0;
         position: relative;
         display: flex;
         flex-direction: column;
